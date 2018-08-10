@@ -450,5 +450,6 @@ $('body').append(
 		<li><a href="cabinet2.html">Кабинет2</a></li> \
 		<li><a href="cabinet3.html">Кабинет3</a></li> \
 		<li><a href="course.html">Курс</a></li> \
+		<li><a href="result.html">Result</a></li> \
 	</ol> \
 </div>');
