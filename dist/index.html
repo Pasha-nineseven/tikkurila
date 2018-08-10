@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout layout--index">
+			<header class="page-header">
+				<div class="container-fluid">
+					<span class="top-logo"></span>
+					<div class="user-links">
+						<div class="user-course">
+							<a href="#" class="user-course__link js-user-course__link">
+								<span class="user-links__icon">
+									<span class="user-course__count">4</span>
+								</span>
+								Курсы
+							</a>
+							<div class="user-course__list">
+								<a href="#" class="user-course__close js-user-course__close"></a>
+								<div class="user-course-back">
+									<a href="#" class="user-course-back__link"></a>
+									<a href="#">
+										Почему русские боялись импрессионизма
+									</a>
+								</div>
+								<div class="user-course__roll">
+									<ol>
+										<li class="active">
+											<a href="#" class="course-visited">
+												Почему русские боялись импрессионизма
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												Как русское искусство перестало быть провинциальным
+											</a>
+										</li>
+										<li>
+											<a href="#" class="course-visited">
+												Как в Россию пришли постимпрессионизм и фовизм
+											</a>
+										</li>
+										<li>
+											<a href="#" class="course-visited">
+												Как Матисс поссорил русских
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												Как Щукин и Морозов собирали французскую живопись
+											</a>
+										</li>
+									</ol>
+								</div>
+								<div class="user-course-info">
+									<div class="user-course-info__txt">
+										<span>3</span> из <span>7</span> лекций 	просмотрено
+									</div>
+									<a href="#" class="user-btn"><span>Пройти экзамен</span></a>	
+								</div>
+							</div>
+						</div>
+						<a href="#" class="user-enter js-user-enter">
+							<span class="user-links__icon"></span>
+							Войти
+						</a>
+					</div>
+					<div class="top-nav">
+						<ul class="top-nav__list">
+							<li class="top-nav__item"><a href="#" class="top-nav__link">О проекте</a></li>
+							<li class="top-nav__item top-nav__item--submenu">
+								<a href="#" class="top-nav__link">Обучение</a>
+								<div class="top-submenu">
+									<div class="top-submenu__item">
+										<a href="#" class="top-submenu__link">Курсы</a></div>
+									<div class="top-submenu__item">
+										<a href="#" class="top-submenu__link active">Журнал</a></div>
+									<div class="top-submenu__item">
+										<a href="#" class="top-submenu__link">События</a></div>
+									<div class="top-submenu__item">
+										<a href="#" class="top-submenu__link">Онлайн-университет</a></div>
+								</div>
+							</li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">Вебинары</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">Блог</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">Возможности</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">Новости</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- RIGHT-PANEL -->
+				<div class="right-panel__bg"></div>
+				<div class="right-panel__content">
+					<a href="#" class="right-panel__enter">Войти на сайт</a>
+					<a href="#" class="right-panel__exit">Закрыть</a>
+					<div class="registration-form">
+						<h3>Регистрация</h3>
+						<form action="#" method="post">
+							<div class="input-wrap input-wrap--necessary">
+								<input type="text" placeholder="Логин, электронная почта или номер">
+							</div>
+							<div class="input-wrap">
+								<div class="checkbox-item">
+									<input type="checkbox" id="associate" name="checkbox">
+									<label for="associate">Сотрудник дилера</label>
+								</div>
+								<div class="input-wrap__info">
+									Выбирая данный чекбокс вы подтверждаете что являетесь сотрудником дилера и подтверждаете возможность указать наименование дилера и идентификационный номер дилера
+								</div>
+							</div>
+							<div class="input-wrap input-wrap--necessary">
+								<input type="password" placeholder="Придумайте пароль">
+								<a href="#" class="toggle-pass"></a>
+							</div>
+							<div class="input-wrap input-wrap--necessary">
+								<input type="password" placeholder="Подтвердите пароль">
+								<div class="input-wrap__info">
+									Пароль должен содержать не менее 8 символов, включающих в себя: латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9).
+								</div>
+							</div>
+							<div class="submit-wrap">
+								<input type="submit" class="btn" value="Зарегистрироваться">
+								<div class="submit-wrap__info">
+									Для того, чтобы зарегистрироваться необходимо заполнить все отмеченные поля
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- END RIGHT-PANEL -->
+			</header>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="container-fluid">
+					<!-- CONTENT-PART -->
+						<div class="index-top" style="background-image: url(img/content/index-top-bg.jpg);">
+							<div class="container-fluid">
+								<div class="index-top__info">
+									<h1>Tikkurila academy</h1>
+									<p>
+										Открытая система электронного<br> образования
+									</p>
+									<div class="index-top__links">
+										<a href="#" class="btn">Начать обучение</a>
+										<a href="#" class="btn">Как пользоваться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-about">
+							<div class="container-fluid">
+								<h3>
+									Что такое<br> tikkurila academy
+								</h3>
+								<div class="index-about__msg">
+									Финская компания Tikkurila — лидер казахстанского рынка в сегменте лакокрасочных материалов премиум-класса увеличила мощности и расширила спектр продукции
+								</div>
+								<div class="index-about__list">
+									<div class="index-about__item">
+										<div class="index-about__wrap">
+											<div class="index-about__icon">
+												<img src="img/svg/about-i1.svg" alt="">
+											</div>
+											<div class="index-about__count">240</div>
+											<div class="index-about__title">Онлайн-курсов</div>
+										</div>
+									</div>
+									<div class="index-about__item">
+										<div class="index-about__wrap">
+											<div class="index-about__icon">
+												<img src="img/svg/about-i2.svg" alt="">
+											</div>
+											<div class="index-about__count">94</div>
+											<div class="index-about__title">Преподавателя</div>
+										</div>
+									</div>
+									<div class="index-about__item">
+										<div class="index-about__wrap">
+											<div class="index-about__icon">
+												<img src="img/svg/about-i3.svg" alt="">
+											</div>
+											<div class="index-about__count">70 080</div>
+											<div class="index-about__title">Образовательных статей</div>
+										</div>
+									</div>
+									<div class="index-about__item">
+										<div class="index-about__wrap">
+											<div class="index-about__icon">
+												<img src="img/svg/about-i4.svg" alt="">
+											</div>
+											<div class="index-about__count">1580</div>
+											<div class="index-about__title">Часов видео-курсов</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="middle-slider-wrap">
+							<div class="middle-slider">
+								<div class="middle-slider__item">
+									<div class="middle-slider__bg" style="background-image: url(img/content/m-slide1.jpg);"></div>
+									<div class="container-fluid">
+										<div class="middle-slider__title">
+											Природа снова вдохновляет дизайнеров интерьера
+										</div>
+										<div class="middle-slider__info">
+											Теплые оттенки прекрасно сочетаются с прохладным. Сделайте зеленый главным цветом вашего интерьера и вы почувствуете, как ваш дом наполнится гармонией и умиротворением. А комнатные растения, расположенные на разных уровнях, дополнят общую атмосферу.
+										</div>
+									</div>
+								</div>
+								<div class="middle-slider__item">
+									<div class="middle-slider__bg" style="background-image: url(img/content/m-slide1.jpg);"></div>
+									<div class="container-fluid">
+										<div class="middle-slider__title">
+											Test 2
+										</div>
+										<div class="middle-slider__info">
+											test test
+										</div>
+									</div>
+								</div>
+								<div class="middle-slider__item">
+									<div class="middle-slider__bg" style="background-image: url(img/content/m-slide1.jpg);"></div>
+									<div class="container-fluid">
+										<div class="middle-slider__title">
+											Test 3
+										</div>
+										<div class="middle-slider__info">
+											test test test
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-courses">
+							<div class="container-fluid">
+								<h3>Подборки по курсам</h3>
+								<div class="index-courses__wrap">
+									<div class="index-courses__item">
+										<div class="index-courses__bg"></div>
+										<div class="index-courses__inner">
+											<div class="index-courses__labels">
+												<div class="index-courses__label">Литература</div>
+											</div>
+											<a href="#" class="index-courses__img" style="background-image: url(img/content/course1.jpg)"></a>
+											<a href="#" class="index-courses__title">Работы внутри помещения</a>
+											<div class="index-courses__votes">
+												<span class="index-courses__rev">7</span>
+											</div>
+											<div class="index-courses__btn">
+												<a href="#" class="btn">Пройти курс</a>
+											</div>
+										</div>
+									</div>
+									<div class="index-courses__item">
+										<div class="index-courses__bg"></div>
+										<div class="index-courses__inner">
+											<div class="index-courses__labels">
+												<div class="index-courses__label">Повседневная жизнь</div>
+											</div>
+											<a href="#" class="index-courses__img" style="background-image: url(img/content/course2.jpg)"></a>
+											<a href="#" class="index-courses__title">Окраска фасадов</a>
+											<div class="index-courses__votes">
+												<span class="index-courses__rev">4</span>
+											</div>
+											<div class="index-courses__btn">
+												<a href="#" class="btn">Пройти курс</a>
+											</div>
+										</div>
+									</div>
+									<div class="index-courses__item">
+										<div class="index-courses__bg"></div>
+										<div class="index-courses__inner">
+											<div class="index-courses__labels">
+												<div class="index-courses__label">История</div>
+											</div>
+											<a href="#" class="index-courses__img" style="background-image: url(img/content/course3.jpg)"></a>
+											<a href="#" class="index-courses__title">Петербург накануне революции</a>
+											<div class="index-courses__votes">
+												<span class="index-courses__rev">9</span>
+												<span class="index-courses__vote">4</span>
+											</div>
+											<div class="index-courses__btn">
+												<a href="#" class="btn">Пройти курс</a>
+											</div>
+										</div>
+									</div>
+									<div class="index-courses__item">
+										<div class="index-courses__bg"></div>
+										<div class="index-courses__inner">
+											<div class="index-courses__labels">
+												<div class="index-courses__label">Фольклор</div>
+											</div>
+											<a href="#" class="index-courses__img" style="background-image: url(img/content/course4.jpg)"></a>
+											<a href="#" class="index-courses__title">«Доктор Живаго» Бориса Пастернака</a>
+											<div class="index-courses__votes">
+												<span class="index-courses__rev">3</span>
+												<span class="index-courses__vote">2</span>
+											</div>
+											<div class="index-courses__btn">
+												<a href="#" class="btn">Пройти курс</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index-curators">
+							<div class="container-fluid">
+								<h3>Кураторы проекта</h3>
+								<div class="index-curators__wrap">
+									<div class="index-curators__slider">
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/curator1.jpg);"></div>
+												<div class="index-curators__title">​​Сусанна Венто</div>
+												<div class="index-curators__txt">
+													Дизайнер по интерьерам, известна своим блогом Varpunen, а также сотрудничеством с несколькими дизайнерскими брендами.
+												</div>
+											</div>
+										</div>
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/curator2.jpg);"></div>
+												<div class="index-curators__title">​​Теему Мууримяки</div>
+												<div class="index-curators__txt">
+													Мууримяки известен благодаря созданию элегантных вечерних и свадебных платьев, а также сотрудничеству с модными домами Giorgio Armani и Dolce & Gabbana.
+												</div>
+											</div>
+										</div>
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/curator3.jpg);"></div>
+												<div class="index-curators__title">​​Оскарссон Михаил</div>
+												<div class="index-curators__txt">
+													Благодаря элегантных вечерних и свадебных платьев, а также сотрудничеству с модными домами Giorgio Armani и Dolce & Gabbana.
+												</div>
+											</div>
+										</div>
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/curator4.jpg);"></div>
+												<div class="index-curators__title">​​Теему Мууримяки</div>
+												<div class="index-curators__txt">
+													В своей работе она предпочитает классические решения, но смело сочетает дизайн и изделия из переработанных материалов..
+												</div>
+											</div>
+										</div>
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/curator2.jpg);"></div>
+												<div class="index-curators__title">​​Теему Мууримяки</div>
+												<div class="index-curators__txt">
+													Test test. Test test. Test test. Test test.
+												</div>
+											</div>
+										</div>
+										<div class="index-curators__item">
+											<div class="index-curators__inner">
+												<div class="index-curators__img" style="background-image: url(img/content/av.jpg);"></div>
+												<div class="index-curators__title">​​Волосюк Андрей</div>
+												<div class="index-curators__txt">
+													Test test.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--end CONTENT-PART -->
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="container-fluid">
+					<div class="copyright">&copy; 2017 tikkurila academy</div>
+					<div class="socials">
+						<a href="#" class="socials__item socials__item--fb"></a>
+						<a href="#" class="socials__item socials__item--yt"></a>
+						<a href="#" class="socials__item socials__item--inst"></a>
+					</div>
+					<div class="develop">
+						Дизайн и разработка — <a href="http://nineseven.by/" target="_blank">Nineseven</a>
+					</div>
+				</div>
+			</footer>
+		</div><!-- END LAYOUT-->
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>
