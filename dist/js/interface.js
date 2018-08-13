@@ -375,6 +375,37 @@ $(document).ready(function() {
 		 //  	]
 	    });
 	};
+	if ($('.other-slider-min').length>0) {
+		var $gallery = $('.other-slider-min');
+
+	    $gallery.slick({
+			speed: 250,
+			swipe: true,
+			swipeToSlide: true,
+			touchThreshold: 10,
+			arrows:true,
+			useTransform:true,
+			accessibility: false,
+			infinite: false,
+			slidesToShow: 3,
+  			slidesToScroll: 1
+			// responsive: [
+			//     {
+			//       breakpoint: 1000,
+			//       settings: {
+			//         adaptiveHeight:true,
+			//       }
+			//     },
+			//     {
+			//       breakpoint: 600,
+			//       settings: {
+			//         dots:true,
+			//         adaptiveHeight:true,
+			//       }
+			//     },
+		 //  	]
+	    });
+	};
 
 
 
@@ -450,5 +481,6 @@ $('body').append(
 		<li><a href="cabinet2.html">Кабинет2</a></li> \
 		<li><a href="cabinet3.html">Кабинет3</a></li> \
 		<li><a href="course.html">Курс</a></li> \
+		<li><a href="result.html">Result</a></li> \
 	</ol> \
 </div>');
