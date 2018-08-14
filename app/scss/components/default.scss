@@ -22,6 +22,10 @@ body{
     &.fixed{
         overflow: hidden;
     }
+    &.fixed-menu{
+        overflow: hidden;
+        padding-right: 17px;
+    }
 }
 *:focus {
     outline: none;

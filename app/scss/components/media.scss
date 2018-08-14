@@ -177,13 +177,9 @@
 	.page-header:after {
 	    top: 100%;
 	}
-	// .user-links,
-	// .top-nav__list {
-	//     margin-top: 19px;
-	// }
-	// .page-header.fixed .top-logo {
-	//     margin-right: 25px;
-	// }
+	.page-header.fixed .top-logo{
+		margin-bottom: 0;
+	}
 	.layout {
 	    padding-top: 66px;
 	}
@@ -317,6 +313,14 @@
 	}
 	.input-wrap {
 	    margin-bottom: 24px;
+	}
+	.menu-btn{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.user-links,
+	.top-nav{
+		display: none;
 	}
 }
 
