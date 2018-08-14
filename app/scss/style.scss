@@ -511,7 +511,7 @@ a.breadcrumbs__item{
 		margin-top: -60px;
 		border: 0;
 		transition:opacity 0.3s ease;
-		margin-bottom: 0;
+		margin-bottom: 0!important;
 		&:hover{
 			opacity: 0.7;
 		}
@@ -710,6 +710,7 @@ a.breadcrumbs__item{
 	position: absolute;
 	left: 0;
 	top: 63px;
+	line-height: 1;
 }
 
 .vocabulary-list{
@@ -868,15 +869,18 @@ a.breadcrumbs__item{
 	.incut{
 		margin-left: 0;
 		margin-right: 0;
-	}
-	.defauil-video {
 	    height: 340px;
 	}
+	}
+	.defauil-video {
 	.defauil-video__play {
 	    width: 130px;
 	    height: 220px;
 	    &:before{
 	    	top: 125px;
+	    }
+	    &:hover{
+	    	height: 240px;
 	    }
 	}
 	.default__clarification {
@@ -1303,6 +1307,8 @@ a.breadcrumbs__item{
 	margin-bottom: 30px;
 	border-radius: 2px;
 	padding: 20px 40px;
+	position: relative;
+	z-index: 1;
 }
 
 .jq-selectbox{
@@ -2257,7 +2263,7 @@ a.breadcrumbs__item{
 }
 
 
-.video{
+.b-video{
 	padding: 45px 0;
 }
 
@@ -2569,6 +2575,7 @@ a.breadcrumbs__item{
 	}
 	&:first-child{
 		border: 0;
+		margin-right: -4px;
 	}
 }
 
@@ -3137,6 +3144,7 @@ a.breadcrumbs__item{
 }
 
 .layout--result{
+	    padding-top: 190px;
 	.other{
 		padding-top: 0;
 	}
