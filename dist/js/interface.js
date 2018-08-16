@@ -1,9 +1,26 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 	$.responsiveTables();
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+	
+	//MENU-MOBILE
+	$('body').on('click','.menu-btn', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.menu-mobile').slideToggle();
+		$( 'body' ).toggleClass('fixed-menu');
+		if ($(this).hasClass('active')){
+		    $('.menu-bg').addClass('is-active').animate({opacity: 1}, 200);
+		} else {
+		    $('.menu-bg').removeClass('is-active').animate({opacity: 0}, 200);
+		}
+	    // $('.right-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
+
+	});
+	$('body').on('click','.menu-mobile__item--submenu .menu-mobile__link', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.menu-mobile-submenu').slideToggle();
+	});
 
 
 	$( 'body' ).on( 'click', '.js-user-course__link', function(e) {
@@ -132,7 +149,7 @@ $(document).ready(function() {
   			slidesToScroll: 1,
   			responsive: [
 			    {
-			      breakpoint: 1100,
+			      breakpoint: 1000,
 			      settings: {
 			        slidesToShow: 3,
 			        slidesToScroll: 1,
@@ -146,7 +163,7 @@ $(document).ready(function() {
 			      }
 			    },
 			    {
-			      breakpoint: 500,
+			      breakpoint: 550,
 			      settings: {
 			        slidesToShow: 1,
 			        slidesToScroll: 1,
@@ -323,21 +340,43 @@ $(document).ready(function() {
 			slidesToShow: 6,
   			slidesToScroll: 1,
   			asNavFor: '.video-slider-view',
-			// responsive: [
-			//     {
-			//       breakpoint: 1000,
-			//       settings: {
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-			//     {
-			//       breakpoint: 600,
-			//       settings: {
-			//         dots:true,
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-		 //  	]
+			responsive: [
+			    {
+			      	breakpoint: 1200,
+			      	settings: {
+			        	slidesToShow: 5,
+  						slidesToScroll: 1,
+			      	}
+			    },
+			    {
+			      	breakpoint: 1000,
+			      	settings: {
+			        	slidesToShow: 4,
+  						slidesToScroll: 1,
+			      	}
+			    },
+			    {
+			      	breakpoint: 800,
+			      	settings: {
+			        	slidesToShow: 3,
+  						slidesToScroll: 1,
+			      	}
+			    },
+			    {
+			      	breakpoint: 600,
+			      	settings: {
+			        	slidesToShow: 2,
+  						slidesToScroll: 1,
+			      	}
+			    },
+			    {
+			      	breakpoint: 500,
+			      	settings: {
+			        	slidesToShow: 1,
+  						slidesToScroll: 1,
+			      	}
+			    },
+		  	]
 	    });
 	};
 
@@ -357,22 +396,30 @@ $(document).ready(function() {
 			accessibility: false,
 			infinite: false,
 			slidesToShow: 4,
-  			slidesToScroll: 1
-			// responsive: [
-			//     {
-			//       breakpoint: 1000,
-			//       settings: {
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-			//     {
-			//       breakpoint: 600,
-			//       settings: {
-			//         dots:true,
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-		 //  	]
+  			slidesToScroll: 1,
+			responsive: [
+			    {
+			      breakpoint: 1000,
+			      settings: {
+			        slidesToShow: 3,
+  					slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow:2,
+  					slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 550,
+			      settings: {
+			        slidesToShow:1,
+  					slidesToScroll: 1
+			      }
+			    },
+		  	]
 	    });
 	};
 	if ($('.other-slider-min').length>0) {
@@ -388,22 +435,23 @@ $(document).ready(function() {
 			accessibility: false,
 			infinite: false,
 			slidesToShow: 3,
-  			slidesToScroll: 1
-			// responsive: [
-			//     {
-			//       breakpoint: 1000,
-			//       settings: {
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-			//     {
-			//       breakpoint: 600,
-			//       settings: {
-			//         dots:true,
-			//         adaptiveHeight:true,
-			//       }
-			//     },
-		 //  	]
+  			slidesToScroll: 1,
+			responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow:2,
+  					slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 550,
+			      settings: {
+			        slidesToShow:1,
+  					slidesToScroll: 1
+			      }
+			    },
+		  	]
 	    });
 	};
 
@@ -430,6 +478,18 @@ $(document).ready(function() {
 
 		//midClick: true,
 	});
+
+
+
+	$( 'body' ).on( 'click', '.js-exam-watch__link', function( event ) {
+		event.preventDefault();
+		$(this).parents('.examen__item').find('.examen-toggle').slideDown();
+		$('.examen-materials__toggle').removeClass('active');
+		$(this).parents('.examen-materials__toggle').addClass("active");
+	    var toggle = $(this).data('toggle');
+	    $(".examen-toggle__item").addClass('dnone');
+	    $("#view-"+toggle).removeClass('dnone');
+   	});
 });
 
 

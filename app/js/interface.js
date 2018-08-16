@@ -478,6 +478,20 @@ $(document).ready(function() {
 
 		//midClick: true,
 	});
+
+
+
+	$( 'body' ).on( 'click', '.js-exam-watch__link', function( event ) {
+		event.preventDefault();
+		$(this).parents('.examen__item').find('.examen-toggle').slideDown();
+		$('.examen-materials__toggle').removeClass('active');
+		$(this).parents('.examen-materials__toggle').addClass("active");
+	    var toggle = $(this).data('toggle');
+	    $(".examen-toggle__item").addClass('dnone');
+	    $("#view-"+toggle).removeClass('dnone');
+   	});
+
+   	courseSliderStart();
 });
 
 
@@ -500,7 +514,7 @@ $(function(){
 
 
 $(window).resize(function () {
-
+	courseSliderStart();
 });
 
 // $(window).load(function(){
@@ -509,6 +523,38 @@ $(window).resize(function () {
 
 // functions
 
+function courseSliderStart() {
+	if ($('.course').length>0) {
+		var $course = $('.course');
+		if($(window).width() < 750) {
+			$course.not('.slick-initialized').slick({
+			  	speed: 250,
+				swipe: true,
+				swipeToSlide: true,
+				touchThreshold: 10,
+				arrows:true,
+				useTransform:true,
+				accessibility: false,
+				infinite: false,
+				slidesToShow: 2,
+	  			slidesToScroll: 1,
+				responsive: [
+				    {
+				      breakpoint: 550,
+				      settings: {
+				        slidesToShow:1,
+	  					slidesToScroll: 1
+				      }
+				    },
+			  	]
+			});
+		} else{
+			if($course.hasClass('slick-initialized')) {
+				$course.slick("unslick");
+			}
+		}
+	}
+}
 
 // links pages
 $('body').append(

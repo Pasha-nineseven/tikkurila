@@ -744,8 +744,6 @@ img.mfp-img {
 
 
 
-
-
 //CIRCLE
 
 /****************************************************************
@@ -866,6 +864,449 @@ img.mfp-img {
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
+
+
+.c100:before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: #ed1c24;
+    border:2px solid #fff;
+    position: absolute;
+    z-index: 3;
+}
+.p1:before{
+  right: 15px;
+  top: -3px;
+}
+.p2:before{
+  right: 14px;
+  top: -3px
+}
+.p3:before{
+  right: 10px;
+  top: -3px
+}
+.p4:before{
+  right: 10px;
+  top: -3px;
+}
+.p5:before{
+      right: 7px;
+    top: -2px;
+}
+.p6:before{
+      right: 6px;
+    top: -1px;
+}
+.p7:before{
+  right: 5px;
+    top: 0px;
+}
+.p8:before{
+  right: 4px;
+    top: 1px;
+}
+.p9:before{
+  right: 3px;
+    top: 2px;
+}
+.p10:before{
+  right: 3px;
+  top: 1px;
+}
+.p11:before{
+  right: 3px;
+  top: 1px;
+}
+.p12:before{
+  right: 2px;
+  top: 2px;
+}
+.p13:before{
+  right: 2px;
+  top: 2px;
+}
+.p14:before{
+  right: 1px;
+  top: 3px;
+}
+.p15:before{
+  right: 1px;
+  top: 3px;
+}
+.p16:before{
+  right: 0px;
+  top: 4px;
+}
+.p17:before{
+  right: 0px;
+  top: 4px;
+}
+.p18:before{
+  right: -1px;
+  top: 5px;
+}
+.p19:before{
+  right: -2px;
+  top: 8px;
+}
+
+.p20:before{
+  right: -3px;
+  top: 10px;
+}
+
+
+.p21:before{
+  right: -3px;
+  top: 11px;
+}
+.p22:before{
+  right: -3px;
+  top: 13px;
+}
+.p23:before{
+  right: -3px;
+  top: 15px;
+}
+.p24:before{
+  right: -3px;
+  top: 16px;
+}
+.p25:before{
+  right: -3px;
+  top: 16px;
+}
+
+.p26:before{
+  right: -3px;
+    top: 20px
+}
+.p27:before{
+  right: -3px;
+    top: 22px
+}
+.p28:before{
+  right: -2px;
+    top: 22px
+}
+.p29:before{
+  right: -2px;
+    top: 23px
+}
+.p30:before{
+  right: -2px;
+    top: 24px
+}
+.p31:before{
+  right: -2px;
+    top: 25px
+}
+.p32:before{
+  right: -1px;
+    top: 26px
+}
+.p33:before{
+  right: -1px;
+    top: 26px
+}
+.p34:before{
+  right: 0px;
+    top: 27px
+}
+.p35:before{
+  right: 0px;
+    top: 27px
+}
+.p36:before{
+  right: 1px;
+    top: 28px;
+}
+.p37:before{
+  right: 2px;
+    top: 29px;
+}
+.p38:before{
+  right: 2px;
+    top: 29px;
+}
+.p39:before{
+  right: 3px;
+    top: 30px;
+}
+.p40:before{
+  right: 4px;
+    top: 31px;
+}
+.p41:before{
+  right: 5px;
+    top: 31px;
+}
+.p42:before{
+  right: 5px;
+    top: 32px;
+}
+.p43:before{
+  right: 6px;
+    top: 33px;
+}
+.p44:before{
+  right: 6px;
+    top: 33px;
+}
+.p45:before{
+  right: 8px;
+    top: 33px;
+}
+.p46:before{
+  right: 8px;
+    top: 33px;
+}
+.p47:before{
+  right: 10px;
+    top: 33px;
+}
+.p48:before{
+  right: 10px;
+    top: 33px;
+}
+.p49:before{
+  right: 13px;
+    top: 33px;
+}
+
+.p50:before{
+  right: 13px;
+    top: 33px;
+}
+
+
+
+
+
+
+
+
+.p100:before{
+  left: 15px;
+  top: -3px;
+}
+.p99:before{
+  left: 14px;
+  top: -3px
+}
+.p98:before{
+  left: 10px;
+  top: -3px
+}
+.p97:before{
+  left: 10px;
+  top: -3px;
+}
+.p96:before{
+  left: 7px;
+    top: -2px;
+}
+.p95:before{
+  left: 6px;
+    top: -1px;
+}
+.p94:before{
+  left: 5px;
+    top: 0px;
+}
+.p93:before{
+  left: 4px;
+    top: 1px;
+}
+.p92:before{
+  left: 3px;
+    top: 2px;
+}
+.p91:before{
+  left: 3px;
+  top: 1px;
+}
+.p90:before{
+  left: 3px;
+  top: 1px;
+}
+.p89:before{
+  left: 2px;
+  top: 2px;
+}
+.p88:before{
+  left: 2px;
+  top: 2px;
+}
+.p87:before{
+  left: 1px;
+  top: 3px;
+}
+.p86:before{
+  left: 1px;
+  top: 3px;
+}
+.p85:before{
+  left: 0px;
+  top: 4px;
+}
+.p84:before{
+  left: 0px;
+  top: 4px;
+}
+.p83:before{
+  left: -1px;
+  top: 5px;
+}
+.p82:before{
+  left: -2px;
+  top: 8px;
+}
+.p81:before{
+  left: -3px;
+  top: 10px;
+}
+
+
+
+
+.p80:before{
+  left: -3px;
+  top: 10px;
+}
+
+
+.p79:before{
+  left: -3px;
+  top: 11px;
+}
+.p78:before{
+  left: -3px;
+  top: 13px;
+}
+.p77:before{
+  left: -3px;
+  top: 15px;
+}
+.p76:before{
+  left: -3px;
+  top: 16px;
+}
+.p75:before{
+  left: -3px;
+  top: 16px;
+}
+
+.p74:before{
+  left: -3px;
+    top: 20px
+}
+.p73:before{
+  left: -3px;
+    top: 22px
+}
+.p72:before{
+  left: -2px;
+    top: 22px
+}
+.p71:before{
+  left: -2px;
+    top: 23px
+}
+.p70:before{
+  left: -2px;
+    top: 24px
+}
+.p69:before{
+  left: -2px;
+    top: 25px
+}
+.p68:before{
+  left: -1px;
+    top: 26px
+}
+.p67:before{
+  left: -1px;
+    top: 26px
+}
+.p66:before{
+  left: 0px;
+    top: 27px
+}
+.p65:before{
+  left: 0px;
+    top: 27px
+}
+.p64:before{
+  left: 1px;
+    top: 28px;
+}
+.p63:before{
+  left: 2px;
+    top: 29px;
+}
+.p62:before{
+  left: 2px;
+    top: 29px;
+}
+.p61:before{
+  left: 3px;
+    top: 30px;
+}
+.p60:before{
+  left: 4px;
+    top: 31px;
+}
+.p59:before{
+  left: 5px;
+    top: 31px;
+}
+.p58:before{
+  left: 5px;
+    top: 32px;
+}
+.p57:before{
+  left: 6px;
+    top: 33px;
+}
+.p56:before{
+  left: 6px;
+    top: 33px;
+}
+.p55:before{
+  left: 8px;
+    top: 33px;
+}
+.p54:before{
+  left: 8px;
+    top: 33px;
+}
+.p53:before{
+  left: 10px;
+    top: 33px;
+}
+.p52:before{
+  left: 10px;
+    top: 33px;
+}
+.p51:before{
+  left: 13px;
+    top: 33px;
+}
+
+
+
+
+
+
 .c100 .slice {
   position: absolute;
   width: 1em;
