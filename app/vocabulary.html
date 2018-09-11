@@ -153,22 +153,38 @@
 				<div class="right-panel__content">
 					<a href="#" class="right-panel__enter">Войти на сайт</a>
 					<a href="#" class="right-panel__exit">Закрыть</a>
-					<div class="recovery-form">
-						<h3>Восстановление пароля</h3>
+					<div class="confirm-form">
+						<h3>Подтверждение номера</h3>
 						<form action="#" method="post">
 							<div class="input-wrap">
 								<div class="input-wrap__info">
-									Введите логин, адрес электронной почты или номер мобильного телефона, который Вы указывали при регистрации и подтвердили в качестве контактных данных 
+									Мы выслали вам код подтверждения на указанный номер телефона. Введите его в поле, чтобы подтвердить вашу личность.
 								</div>
 							</div>
-							<div class="input-wrap input-wrap--necessary">
-								<input type="text" placeholder="Введите ваш логин, электронную почту или телефон">
+							<div class="input-wrap">
+								<div class="confirm-form__inputs">
+									<div class="confirm-form__item">
+										<input type="text" placeholder="8" maxlength="1">
+									</div>
+									<div class="confirm-form__item">
+										<input type="text" placeholder="3" maxlength="1">
+									</div>
+									<div class="confirm-form__item">
+										<input type="text" placeholder="2" maxlength="1">
+									</div>
+									<div class="confirm-form__item">
+										<input type="text" placeholder="1" maxlength="1">
+									</div>
+									<div class="confirm-form__item">
+										<input type="text" placeholder="9" maxlength="1">
+									</div>
+									<div class="confirm-form__item">
+										<input type="text" placeholder="8" maxlength="1">
+									</div>
+								</div>
 							</div>
 							<div class="submit-wrap">
-								<input type="submit" class="btn" value="Восстановить">
-								<div class="submit-wrap__info">
-									Если у вас нет аккаунта на нашем сате, товы можете <a href="#">зарегистрироваться</a>
-								</div>
+								<input type="submit" class="btn" value="Продолжить">
 							</div>
 						</form>
 					</div>
@@ -209,7 +225,7 @@
 								</a>
 								<div class="vocabulary-panel__toggle">
 									<a href="#" class="vocabulary-panel__close"></a>
-									<a href="#" class="vocabulary-list__item"><span class="f-letter">А</span>гон</a>
+									<a href="#agon" class="vocabulary-list__item js-scroll-link"><span class="f-letter">А</span>гон</a>
 									<a href="#" class="vocabulary-list__item">Агора</a>
 									<a href="#" class="vocabulary-list__item">Актер</a>
 									<a href="#" class="vocabulary-list__item">Апотропей</a>
@@ -261,7 +277,7 @@
 							</div>
 						</div>
 						<div class="vocabulary-list">
-							<a href="#" class="vocabulary-list__item"><span class="f-letter">А</span>гон</a>
+							<a href="#agon" class="vocabulary-list__item js-scroll-link"><span class="f-letter">А</span>гон</a>
 							<a href="#" class="vocabulary-list__item">Агора</a>
 							<a href="#" class="vocabulary-list__item">Актер</a>
 							<a href="#" class="vocabulary-list__item">Апотропей</a>
@@ -314,7 +330,7 @@
 							</div>
 						</div>
 						<div class="vocabulary-wrap">
-							<div class="vocabulary-item">
+							<div class="vocabulary-item" id="agon">
 								<div class="vocabulary-item__title"><span>Агон</span></div>
 								<div class="vocabulary-item__info">
 									<div class="vocabulary-item__transcription">
@@ -380,7 +396,7 @@
 									<div class="index-courses__bg"></div>
 									<div class="index-courses__inner">
 										<div class="index-courses__labels">
-											<div class="index-courses__label">Литература</div>
+											<a href="#" class="index-courses__label">Литература</a>
 										</div>
 										<a href="#" class="index-courses__img" style="background-image: url(img/content/course1.jpg)"></a>
 										<a href="#" class="index-courses__title">Работы внутри помещения</a>
@@ -393,7 +409,7 @@
 									<div class="index-courses__bg"></div>
 									<div class="index-courses__inner">
 										<div class="index-courses__labels">
-											<div class="index-courses__label">Повседневная жизнь</div>
+											<a href="#" class="index-courses__label">Повседневная жизнь</a>
 										</div>
 										<a href="#" class="index-courses__img" style="background-image: url(img/content/course2.jpg)"></a>
 										<a href="#" class="index-courses__title">Окраска фасадов</a>
@@ -406,7 +422,7 @@
 									<div class="index-courses__bg"></div>
 									<div class="index-courses__inner">
 										<div class="index-courses__labels">
-											<div class="index-courses__label">История</div>
+											<a href="#" class="index-courses__label">История</a>
 										</div>
 										<a href="#" class="index-courses__img" style="background-image: url(img/content/course3.jpg)"></a>
 										<a href="#" class="index-courses__title">Петербург накануне революции</a>

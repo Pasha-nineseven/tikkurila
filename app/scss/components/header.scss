@@ -101,6 +101,12 @@
 			color: #ed1c24;
 		}
 	}
+	.user-enter{
+		margin-left: 52px;
+		a{
+			text-decoration: none;
+		}
+	}
 }
 
 .user-links__icon{
@@ -135,6 +141,8 @@
 .user-enter{
 	//position: relative;
 	text-decoration: none;
+	display: inline-block;
+	    vertical-align: middle;
 	.user-links__icon{
 		background: url(../img/svg/enter-h.svg) no-repeat;
 		background-size: cover;
@@ -146,6 +154,41 @@
 	// 		background-size: cover;
 	// 	}
 	// }
+}
+
+
+.user-enter--authorized{
+	.top-submenu{
+		width: 205px;
+		&:before{
+			left: auto;
+    		right: 57px;
+		}
+	}
+	&:hover{
+		.top-submenu {
+		    opacity: 1;
+		    -webkit-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		    transform: translate(0, 0);
+		    z-index: 2;
+		    visibility: visible;
+		    -webkit-transition: all 0.3s ease-in-out;
+		    transition: all 0.3s ease-in-out;
+		}
+	}
+	.top-submenu__link {
+	    display: block;
+	    margin-bottom: 15px !important;
+	    color: #a3a6a7;
+	    padding: 0 20px;
+	    border-left: 2px solid transparent;
+	    text-decoration: none;
+	    font-size: 18px;
+	    &:hover{
+	    	color: #011119;
+	    }
+	}
 }
 
 .user-course__link{
