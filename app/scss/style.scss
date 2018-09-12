@@ -695,6 +695,25 @@ a.breadcrumbs__item{
 	}
 }
 
+.input-wrap--change{
+	margin-bottom: 0;
+	// max-width: 300px;
+	display: flex;
+	    align-items: center;
+	input[type="text"],
+	input[type="email"],
+	input[type="search"],
+	input[type="password"]{
+		padding: 11px 14px!important;
+		max-width: 250px;
+		margin-right: 20px;
+	}
+	.btn{
+		padding: 5px 20px!important;
+    	text-transform: none;
+	}
+}
+
 .input-wrap--error{
 	input[type="text"],
 	input[type="email"],
@@ -1524,34 +1543,44 @@ a.breadcrumbs__item{
 
 .data-change{
 	text-decoration: none;
+	display: inline-block;
 	&:hover{
-		span{
+		.data-change__link{
 			opacity: 1;
 		}
 	}
 	span{
-		display: inline-block;
-		vertical-align: middle;
-		width: 24px;
-		height: 24px;
-		background: url(../img/svg/edit.svg) center no-repeat;
-		background-size: 10px 10px;
-		margin-left: 19px;
-		margin-top: -2px;
-		width: 22px;
-		height: 22px;
-		border-radius: 50%;
-		border:2px solid #385443;
-		opacity: 0;
-		transition: opacity 0.3s ease;
+		
 	}
 }
 
+
+.data-change__link{
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url(../img/svg/edit.svg) center no-repeat;
+	background-size: 10px 10px;
+	margin-left: 19px;
+	margin-top: -2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border:2px solid #385443;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
 
 .data-remove{
 	text-decoration: none;
 	&:hover{
 
+		span{
+			border: 2px solid #385543;
+			background: url(../img/svg/cab-close-h.svg) center no-repeat;
+			background-size: 10px 10px;
+		}
 	}
 	span{
 		display: inline-block;
@@ -3216,6 +3245,13 @@ a.breadcrumbs__item{
 	.examen-materials .user-watch__wrap {
 	    font-size: 18px;
 	}
+	.examen-materials__item {
+	    width: 40%;
+	    padding-right: 50px;
+	    &:last-child{
+	    	padding-right: 0;
+	    }
+	}
 }
 
 .final-top{
@@ -3692,6 +3728,99 @@ a.user-btn{
 		}
 	}
 
+}
+
+
+.intl-tel-input {
+    padding-left: 60px;
+}
+
+.intl-tel-input.allow-dropdown input,
+.intl-tel-input.allow-dropdown input[type=tel],
+.intl-tel-input.allow-dropdown input[type=text] {
+    padding-left: 0;
+}
+
+.intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
+    background-color: transparent;
+}
+
+.intl-tel-input.allow-dropdown .flag-container{
+	    border-bottom: 2px solid #c6d0cd;
+}
+
+
+.intl-tel-input .country-list {
+    max-width: 240px;
+    overflow-x:hidden; 
+}
+
+.intl-tel-input .country-list .country {
+    padding: 5px 10px;
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 0;
+    &:before{
+    	display: none;
+    }
+}
+
+.cabinet-phones__item--code{
+	display: flex;
+	flex-wrap:wrap;
+	align-items:center;
+	display: none;
+	.btn{
+		padding: 5px 20px !important;
+		text-transform: none;
+		margin-left: 20px;
+	}
+}
+
+
+
+.user-course-toggle__link{
+	color: #385443;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 1px!important;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #385443!important;
+    font-family: 'din-round-pro-bold';
+    display: inline-block;
+    margin: 0 auto 30px!important;
+    position: relative;
+    &:last-child{
+    	margin-bottom: 0!important;
+    }
+	&.active{
+		background: #fff;
+	    width: 34px;
+	    height: 34px;
+	    line-height: 30px;
+	    border: 1px solid #fff!important;
+	    &:before{
+	    	content: "";
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 7px 8px 7px 0;
+		    position: absolute;
+		    /* right: 100%; */
+		    left: calc(100% + 7px);
+		    top: 50%;
+		    margin-top: -7px;
+		    border-color: transparent #ffffff transparent transparent;
+	    }
+	}
+}
+
+.dnone{
+	display: none!important;
 }
 
 @import "components/pages/index";

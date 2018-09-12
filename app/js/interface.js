@@ -34,6 +34,18 @@ $(document).ready(function() {
 
 
 
+	//COURSE-CHANGE
+	$(".user-course-toggle__link").click(function(e){
+		e.preventDefault();
+	    var num = $(this).data('num');
+
+	    $(".user-course-toggle__link").removeClass('active');
+	    $(this).addClass('active');
+
+	    $(".change-item").addClass('dnone');
+	    $("#course"+num).removeClass('dnone');
+
+   	});
 
 	
 
@@ -310,6 +322,16 @@ $(document).ready(function() {
     }
 
 
+    //PHONE-SELECT
+	if ($(".phoneselect").length>0) {
+		$(".phoneselect").intlTelInput({
+		   autoPlaceholder: "off",
+		   initialCountry:"ru",
+		 //    utilsScript: "js/vendors/telinput/utils.js"
+		   nationalMode: false,
+		   preventInvalidDialCodes: true
+		});
+	};
 
 
 
@@ -514,6 +536,30 @@ $(document).ready(function() {
 	    $(".examen-toggle__item").addClass('dnone');
 	    $("#view-"+toggle).removeClass('dnone');
    	});
+
+
+
+	//CABINET-DATA-CHANGE
+	$( 'body' ).on( 'click', '.js-data-change', function(e) {
+	    e.preventDefault();
+	    $(this).parents('.cabinet-item').find('.data-change').html( "<div class='input-wrap input-wrap--change'><input type='text' placeholder='Изменить'><a href='#' class='btn js-btn-done'>Изменить</a></div>" );
+	});
+	$( 'body' ).on( 'click', '.js-btn-done', function(e) {
+	    e.preventDefault();
+	    var inputVal = $(this).prev('input').val();
+	    //console.log(inputVal);
+	    if (inputVal) {
+	     	$(this).parents('.cabinet-item').find('.data-change').html(inputVal + '<a href="#" class="data-change__link js-data-change"></a>');
+		}
+	});
+	$( 'body' ).on( 'click', '.data-remove', function(e) {
+	    e.preventDefault();
+	    $(this).parents('.cabinet-phones__item').remove();
+	});
+	$( 'body' ).on( 'click', '.js-add-phone', function(e) {
+	    e.preventDefault();
+	    $(this).parents('.cabinet-item').find('.cabinet-phones__item--code').show();
+	});
 
    	courseSliderStart();
 });
