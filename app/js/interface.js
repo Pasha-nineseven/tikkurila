@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 	$.responsiveTables();
-	
+
 	//MENU-MOBILE
 	$('body').on('click','.menu-btn', function(e){
 		e.preventDefault();
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
    	});
 
-	
+
 
 	//ABOUT-PAGE slider
 	if ($('.slider-default').length>0) {
@@ -130,7 +130,7 @@ $(document).ready(function() {
 		//removalDelay: 500, //delay removal by X to allow out-animation
 		callbacks: {
 			beforeOpen: function() {
-			// just a hack that adds mfp-anim class to markup 
+			// just a hack that adds mfp-anim class to markup
 			this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
 			this.st.mainClass = this.st.el.attr('data-effect');
 			}
@@ -274,7 +274,7 @@ $(document).ready(function() {
 	    $('.vocabulary-panel__toggle').fadeOut(100);
 	});
 
-	$(document).mouseup(function (e){ 
+	$(document).mouseup(function (e){
 		var div = $(".vocabulary-panel__toggle");
 		if (!div.is(e.target)
 		    && div.has(e.target).length === 0) {
@@ -627,24 +627,26 @@ function courseSliderStart() {
 }
 
 // links pages
-$('body').append(
-	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
-	<style> \
-		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-		#pages a { text-decoration: none; } \
-		#pages li { margin: 5px 0; } \
-	</style> \
-	<ol id="pages"> \
-		<li><a href="about.html">О нас</a></li> \
-		<li><a href="index.html">Главная(Лекции)</a></li> \
-		<li><a href="index2.html">Главная(Курсы)</a></li> \
-		<li><a href="vocabulary.html">Словарь</a></li> \
-		<li><a href="spisok.html">Список курсов</a></li> \
-		<li><a href="cabinet1.html">Кабинет1</a></li> \
-		<li><a href="cabinet2.html">Кабинет2</a></li> \
-		<li><a href="cabinet3.html">Кабинет3</a></li> \
-		<li><a href="course.html">Курс</a></li> \
-		<li><a href="result.html">Result</a></li> \
-	</ol> \
-</div>');
+if (/.*\.html$/.test(window.location.href)) {
+    $('body').append(
+    	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
+    		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+    	<style> \
+    		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
+    		#pages a { text-decoration: none; } \
+    		#pages li { margin: 5px 0; } \
+    	</style> \
+    	<ol id="pages"> \
+    		<li><a href="about.html">О нас</a></li> \
+    		<li><a href="index.html">Главная(Лекции)</a></li> \
+    		<li><a href="index2.html">Главная(Курсы)</a></li> \
+    		<li><a href="vocabulary.html">Словарь</a></li> \
+    		<li><a href="spisok.html">Список курсов</a></li> \
+    		<li><a href="cabinet1.html">Кабинет1</a></li> \
+    		<li><a href="cabinet2.html">Кабинет2</a></li> \
+    		<li><a href="cabinet3.html">Кабинет3</a></li> \
+    		<li><a href="course.html">Курс</a></li> \
+    		<li><a href="result.html">Result</a></li> \
+    	</ol> \
+    </div>');
+}
