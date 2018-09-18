@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $('a[href="#"], a[href="#/"]').on({
+        click: function (e) {
+            e.preventDefault();
+            console.log('Click on a[href=#]');
+        }
+    });
 	flexibility(document.documentElement);
 	$.responsiveTables();
 
