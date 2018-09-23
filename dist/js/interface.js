@@ -5,13 +5,13 @@ $(document).ready(function() {
             this._bindEvents();
         },
         openRightPanel: function (e) {
-            e.preventDefault();
+            e && e.preventDefault();
             $('.right-panel__content').addClass('is-active');
             $('body').addClass('fixed');
             $('.right-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
         },
         closeRightPanel: function (e) {
-            e.preventDefault();
+            e && e.preventDefault();
             $('.right-panel__content').removeClass('is-active');
             $( 'body' ).removeClass('fixed');
             $('.right-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
