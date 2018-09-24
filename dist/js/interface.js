@@ -16,9 +16,17 @@ $(document).ready(function() {
             $( 'body' ).removeClass('fixed');
             $('.right-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
         },
+        stylerAll: function () {
+            $('.fs').styler();
+        },
         _init: function () {
             flexibility(document.documentElement);
-	        $.responsiveTables();
+            $.responsiveTables();
+            if ($('.fs').length > 0) {
+                setTimeout(function() {
+                    this.stylerAll();
+                }.bind(this), 5)
+            }
         },
         _bindEvents: function () {
             this._handleClicksOnHashLinks();
@@ -302,16 +310,6 @@ $(document).ready(function() {
 		 	$('.vocabulary-panel__link--cursor').removeClass('active');
 		}
 	});
-
-
-
-	//FS
-	if ($('.fs').length) {
-		setTimeout(function() {
-		  $('.fs').styler();
-		}, 5)
-	}
-
 
 	//SHOW FILTER
 	$( 'body' ).on( 'click', '.filter-link', function(e) {
