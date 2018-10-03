@@ -1,3 +1,4 @@
+var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     window.interface = {
         init: function () {
@@ -46,7 +47,7 @@ $(document).ready(function() {
         _handleToggleRightPanel: function () {
             $(document).on('click', '.js-user-enter', this.openRightPanel);
             $(document).on('click', '.right-panel__exit, .right-panel__bg', this.closeRightPanel);
-        },
+        }
     };
     window.interface.init();
 
@@ -557,19 +558,21 @@ $(document).ready(function() {
 
 
 
-	//CABINET-DATA-CHANGE
-	$( 'body' ).on( 'click', '.js-data-change', function(e) {
-	    e.preventDefault();
-	    $(this).parents('.cabinet-item').find('.data-change').html( "<div class='input-wrap input-wrap--change'><input type='text' placeholder='Изменить'><a href='#' class='btn js-btn-done'>Изменить</a></div>" );
-	});
-	$( 'body' ).on( 'click', '.js-btn-done', function(e) {
-	    e.preventDefault();
-	    var inputVal = $(this).prev('input').val();
-	    //console.log(inputVal);
-	    if (inputVal) {
-	     	$(this).parents('.cabinet-item').find('.data-change').html(inputVal + '<a href="#" class="data-change__link js-data-change"></a>');
-		}
-	});
+    //CABINET-DATA-CHANGE
+    if (IS_LOCAL_HTML) {
+        $( 'body' ).on( 'click', '.js-data-change', function(e) {
+            e.preventDefault();
+            $(this).parents('.cabinet-item').find('.data-change').html( "<div class='input-wrap input-wrap--change'><input type='text' placeholder='Изменить'><a href='#' class='btn js-btn-done'>Изменить</a></div>" );
+        });
+        $( 'body' ).on( 'click', '.js-btn-done', function(e) {
+            e.preventDefault();
+            var inputVal = $(this).prev('input').val();
+            //console.log(inputVal);
+            if (inputVal) {
+                $(this).parents('.cabinet-item').find('.data-change').html(inputVal + '<a href="#" class="data-change__link js-data-change"></a>');
+            }
+        });
+    }
 	$( 'body' ).on( 'click', '.data-remove', function(e) {
 	    e.preventDefault();
 	    $(this).parents('.cabinet-phones__item').remove();
@@ -645,7 +648,7 @@ function courseSliderStart() {
 }
 
 // links pages
-if (/.*\.html$/.test(window.location.href)) {
+if (IS_LOCAL_HTML) {
     $('body').append(
     	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
     		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
