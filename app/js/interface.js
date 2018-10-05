@@ -342,15 +342,17 @@ $(document).ready(function() {
 
 
     //PHONE-SELECT
-	if ($(".phoneselect").length>0) {
-		$(".phoneselect").intlTelInput({
-		   autoPlaceholder: "off",
-		   initialCountry:"ru",
-		 //    utilsScript: "js/vendors/telinput/utils.js"
-		   nationalMode: false,
-		   preventInvalidDialCodes: true
-		});
-	};
+    if (IS_LOCAL_HTML) {
+        if ($(".phoneselect").length>0) {
+            $(".phoneselect").intlTelInput({
+            autoPlaceholder: "off",
+            initialCountry:"ru",
+            //    utilsScript: "js/vendors/telinput/utils.js"
+            nationalMode: false,
+            preventInvalidDialCodes: true
+            });
+        };
+    }
 
 
 
@@ -579,7 +581,7 @@ $(document).ready(function() {
 	});
 	$( 'body' ).on( 'click', '.js-add-phone', function(e) {
 	    e.preventDefault();
-	    $(this).parents('.cabinet-item').find('.cabinet-phones__item--code').show();
+	    $(this).parents('.cabinet-item').find('.cabinet-phones__item--code').removeClass('dnone');
 	});
 
    	courseSliderStart();

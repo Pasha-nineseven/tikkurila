@@ -5194,7 +5194,7 @@ a.user-btn:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none; }
+  }
   .cabinet-phones__item--code .btn {
     padding: 5px 20px !important;
     text-transform: none;
