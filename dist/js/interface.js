@@ -670,6 +670,7 @@ if (IS_LOCAL_HTML) {
     		<li><a href="cabinet3.html">Кабинет3</a></li> \
     		<li><a href="course.html">Курс</a></li> \
     		<li><a href="result.html">Result</a></li> \
+    		<li><a href="test.html">Test</a></li> \
     	</ol> \
     </div>');
 }

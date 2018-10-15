@@ -1777,7 +1777,6 @@ img.mfp-img {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   background: #F5F5F5;
-  background: -webkit-linear-gradient(#FFF, #E6E6E6);
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
   background: linear-gradient(#FFF, #E6E6E6);
   -webkit-box-shadow: none;
@@ -1788,7 +1787,6 @@ img.mfp-img {
 
 .jq-selectbox__select:hover {
   background: #E6E6E6;
-  background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
   background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E6E6E6));
   background: linear-gradient(#F6F6F6, #E6E6E6); }
 
