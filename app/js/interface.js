@@ -20,6 +20,14 @@ $(document).ready(function() {
         stylerAll: function () {
             $('.fs').styler();
         },
+        openCoursePanel: function (e) {
+            e.preventDefault();
+            $(e.target).next('.user-course__list').fadeToggle(100);
+        },
+        closeCoursePanel: function (e) {
+            e.preventDefault();
+	        $('.user-course__list').fadeOut(100);
+        },
         _init: function () {
             flexibility(document.documentElement);
             $.responsiveTables();
@@ -32,6 +40,7 @@ $(document).ready(function() {
         _bindEvents: function () {
             this._handleClicksOnHashLinks();
             this._handleToggleRightPanel();
+            this._handleToggleCoursePanel();
         },
         _handleClicksOnHashLinks: function () {
             var selectors = [
@@ -47,6 +56,10 @@ $(document).ready(function() {
         _handleToggleRightPanel: function () {
             $(document).on('click', '.js-user-enter', this.openRightPanel);
             $(document).on('click', '.right-panel__exit, .right-panel__bg', this.closeRightPanel);
+        },
+        _handleToggleCoursePanel: function () {
+            $(document).on('click', '.js-user-course__link', this.openCoursePanel);
+            $(document).on('click', '.js-user-course__close', this.closeCoursePanel);
         }
     };
     window.interface.init();
@@ -70,17 +83,6 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$('.menu-mobile-submenu').slideToggle();
 	});
-
-
-	$( 'body' ).on( 'click', '.js-user-course__link', function(e) {
-	    e.preventDefault();
-	    $(this).next('.user-course__list').fadeToggle(100);
-	});
-	$( 'body' ).on( 'click', '.js-user-course__close', function(e) {
-	    e.preventDefault();
-	    $('.user-course__list').fadeOut(100);
-	});
-
 
 
 	//COURSE-CHANGE
@@ -247,27 +249,6 @@ $(document).ready(function() {
 	    }
 	    return false;
 	});
-
-
-    //RIGHT-PANEL TOGGLE
-
-
-	// $( 'body' ).on( 'click', '.js-user-enter,.right-panel__enter', function(e) {
-	//     e.preventDefault();
-	//     $('.registration-form').fadeOut(10);
-	//     $('.recovery-form').fadeOut(10);
-	//     $('.right-panel').addClass('active');
-	//     $('.authorization-form').fadeIn(10);
-
-	//     $( 'body' ).addClass('fixed');
-	// });
-
-	// $( 'body' ).on( 'click', '.forgot', function(e) {
-	//     e.preventDefault();
-	//     $('.authorization-form').fadeOut(10);
-	//     $('.recovery-form').fadeIn(10);
-	// });
-
 
 	//FILTER TOGGLE
 	$( 'body' ).on( 'click', '.page-filter-submenu__toggle', function(e) {
