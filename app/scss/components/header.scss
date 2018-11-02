@@ -533,6 +533,13 @@
 		background: url(../img/svg/close.svg) no-repeat;
 		background-size: contain; 
 	}
+	&:hover{
+		color: #385543!important;
+		&:after{
+			background: url(../img/svg/close-h.svg) no-repeat;
+			background-size: contain; 
+		}
+	}
 }
 
 
