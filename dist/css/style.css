@@ -6010,16 +6010,22 @@ a.user-btn:hover {
   font-family: 'din-round-pro-bold'; }
 
 .index-curators__txt {
-  font-size: 14px; }
+  font-size: 14px;
+  color: #77857e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
 
 .index-curators__inner {
   width: 100%;
   color: #fff !important;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
   .index-curators__inner:hover .index-curators__bg {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05); }
+  .index-curators__inner:hover .index-curators__txt {
+    color: #fff; }
 
 .index-curators__slider {
   display: none; }

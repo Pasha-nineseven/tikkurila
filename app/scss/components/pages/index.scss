@@ -612,15 +612,21 @@
 
 .index-curators__txt{
 	font-size: 14px;
+	color: #77857e;
+	transition: color 0.3s ease;
 }
 
 .index-curators__inner{
 	width: 100%;
 	color: #fff!important;
 	text-decoration: none;
+	display: block;
 	&:hover{
 		.index-curators__bg{
 			transform: scale(1.05);
+		}
+		.index-curators__txt{
+			color: #fff;
 		}
 	}
 }
