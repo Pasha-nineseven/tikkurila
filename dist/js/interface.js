@@ -388,6 +388,7 @@ $(document).ready(function() {
 			slidesToShow: 6,
   			slidesToScroll: 1,
   			asNavFor: '.video-slider-view',
+  			focusOnSelect: true,
 			responsive: [
 			    {
 			      	breakpoint: 1200,
@@ -575,6 +576,8 @@ $(document).ready(function() {
 	};
 
    	courseSliderStart();
+
+   	
 });
 
 
