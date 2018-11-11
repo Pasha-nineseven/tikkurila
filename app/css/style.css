@@ -1979,7 +1979,7 @@ a.user-btn {
     background: #385543;
     color: #fff; }
   .btn.btn--disabled {
-    background: #d2d7d8;
+    background: #d2d7d8 !important;
     pointer-events: none;
     text-decoration: line-through; }
 

@@ -81,7 +81,7 @@
 		color: #fff;
 	}
 	&.btn--disabled{
-		background: #d2d7d8;
+		background: #d2d7d8!important;
 		pointer-events:none;
 		text-decoration: line-through;
 	}
