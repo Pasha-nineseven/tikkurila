@@ -33,6 +33,7 @@ gulp.task('scripts', function(){
         'app/libs/formstyler/jquery.formstyler.min.js',
         'app/libs/rtables/jquery.responsive-tables.js',
         'app/libs/telinput/intlTelInput.js',
+        'app/libs/tooltip/tooltipster.bundle.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

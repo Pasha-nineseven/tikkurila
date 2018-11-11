@@ -565,6 +565,15 @@ $(document).ready(function() {
 	    $(this).parents('.cabinet-item').find('.cabinet-phones__item--code').removeClass('dnone');
 	});
 
+	//TOOLTIP
+	if ($('.tooltip').length>0) {
+		$('.tooltip').tooltipster({
+			animation: 'fade',
+   			delay: 100,
+   			'maxWidth': 500, 
+		});
+	};
+
    	courseSliderStart();
 });
 
