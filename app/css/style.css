@@ -1980,8 +1980,7 @@ a.user-btn {
     color: #fff; }
   .btn.btn--disabled {
     background: #d2d7d8 !important;
-    pointer-events: none;
-    text-decoration: line-through; }
+    pointer-events: none; }
 
 .layout {
   display: table;
