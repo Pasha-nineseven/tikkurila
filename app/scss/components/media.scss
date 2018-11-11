@@ -147,7 +147,8 @@
 	.slider-default-wrap .slick-prev {
 	    left: -35px;
 	}
-	.workarea blockquote {
+	.workarea blockquote,
+	.popup__content blockquote{
 	    padding-left: 30px;
 	    margin-left: 30px;
 	}
@@ -488,10 +489,12 @@
 }
 
 @media screen and (max-width: 800px){
-	.workarea td {
+	.workarea td,
+	.popup__content td{
 	    padding: 10px 20px;
 	}
-	.workarea tr:first-child td {
+	.workarea tr:first-child td,
+	.popup__content tr:first-child td {
 	    border-top: 0;
 	}
 	.jrt td {
@@ -923,15 +926,18 @@
 	.t-columns {
 	    padding-top: 20px;
 	}
-	.workarea mark {
+	.workarea mark,
+	.popup__content mark{
 	    font-size: 20px;
 	    line-height: 1.2;
 	    margin-bottom: 20px;
 	}
-	.workarea p{
+	.workarea p,
+	.popup__content p{
 		margin-bottom: 20px;
 	}
-	.workarea blockquote {
+	.workarea blockquote,
+	.popup__content blockquote{
 	    padding-left: 20px;
 	    margin-left: 20px;
 	    line-height: 1.3;
