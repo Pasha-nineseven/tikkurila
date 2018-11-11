@@ -1393,7 +1393,8 @@ a.user-links__exit {
   margin-top: 20px;
   -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.31);
           box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.31);
-  display: none; }
+  display: none;
+  z-index: 1; }
   .user-course__list:after {
     content: "";
     display: block;
