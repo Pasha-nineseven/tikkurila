@@ -423,6 +423,9 @@ a.breadcrumbs__item{
 		display: block;
 		margin-bottom: 15px;
 	}
+	img{
+		max-height: 100%;
+	}
 }
 
 .table-clarification-answer{
@@ -887,9 +890,8 @@ a.breadcrumbs__item{
 	.incut{
 		margin-left: 0;
 		margin-right: 0;
-	    height: 340px;
 	}
-	}
+}
 	.defauil-video {
 	.defauil-video__play {
 	    width: 130px;

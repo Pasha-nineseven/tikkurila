@@ -2257,6 +2257,8 @@ a.breadcrumbs__item {
     height: auto;
     display: block;
     margin-bottom: 15px; }
+  .incut img {
+    max-height: 100%; }
 
 .table-clarification-answer {
   font-size: 14px;
@@ -2670,8 +2672,7 @@ a.breadcrumbs__item {
   margin-bottom: 10px; }
   .vocabulary-item .incut {
     margin-left: 0;
-    margin-right: 0;
-    height: 340px; }
+    margin-right: 0; }
 
 .defauil-video .defauil-video__play {
   width: 130px;
@@ -6502,11 +6503,6 @@ a.user-btn:hover {
       font-size: 16px; }
     .vocabulary-panel__toggle .f-letter {
       font-size: 18px; }
-  .vocabulary-list__item {
-    margin: 0 10px 2px 0;
-    font-size: 16px; }
-  .f-letter {
-    font-size: 18px; }
   .vocabulary-panel {
     padding: 5px;
     padding-left: 10px;
