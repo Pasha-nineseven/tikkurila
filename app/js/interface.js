@@ -664,6 +664,7 @@ if (IS_LOCAL_HTML) {
     		<li><a href="course.html">Курс</a></li> \
     		<li><a href="result.html">Result</a></li> \
     		<li><a href="test.html">Test</a></li> \
+    		<li><a href="page404.html">Page404</a></li> \
     	</ol> \
     </div>');
 }
