@@ -22,7 +22,7 @@ $(document).ready(function() {
         },
         openCoursePanel: function (e) {
             e.preventDefault();
-            $(e.target).next('.user-course__list').fadeToggle(100);
+            $('.user-course__list').fadeToggle(100);
         },
         closeCoursePanel: function (e) {
             e.preventDefault();
