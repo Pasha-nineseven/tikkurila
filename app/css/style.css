@@ -1348,10 +1348,10 @@ input[type="password"] {
   width: 24px;
   height: 20px;
   margin-top: -10px;
-  background: url(../img/svg/eye.svg) no-repeat;
+  background: url(../img/svg/eye-closed.svg) no-repeat;
   background-size: 24px 20px; }
   .toggle-pass.active {
-    background: url(../img/svg/eye-closed.svg) 0px 0px no-repeat;
+    background: url(../img/svg/eye.svg) 0px 0px no-repeat;
     background-size: 24px 20px; }
 
 .submit-wrap__info {
