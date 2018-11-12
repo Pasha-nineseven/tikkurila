@@ -5630,6 +5630,11 @@ a.user-btn:hover {
 .layout--index .top-nav__item--submenu:after {
   background: url(../img/svg/m-arrow-w.svg) no-repeat; }
 
+.layout--index .top-submenu__link {
+  color: #a3a6a7 !important; }
+  .layout--index .top-submenu__link:hover {
+    color: #011119 !important; }
+
 .index-top {
   background-size: cover;
   background-repeat: no-repeat;

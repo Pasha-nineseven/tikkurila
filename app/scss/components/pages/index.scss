@@ -92,6 +92,12 @@
 			background: url(../img/svg/m-arrow-w.svg) no-repeat;
 		}
 	}
+	.top-submenu__link{
+		color: #a3a6a7!important;
+		&:hover{
+			color: #011119!important;
+		}
+	}
 }
 
 .index-top{
