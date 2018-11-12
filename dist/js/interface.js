@@ -64,6 +64,51 @@ $(document).ready(function() {
     };
     window.interface.init();
 
+
+
+
+    //MENU-HOVER
+    $(".top-nav__item").mouseenter(function() {
+    	$(".top-nav__item").css({"opacity":"0.6"});
+    	$(".user-links a").css({"opacity":"0.6"});
+	    $(this).css({"opacity":"1"});
+	}).mouseleave(function() {
+	    $(".top-nav__item").css({"opacity":"1"});
+	    $(".user-links a").css({"opacity":"1"});
+	});
+	//RIGHT-MENU-HOVER
+    $(".user-course").mouseenter(function() {
+    	$(".top-nav__item").css({"opacity":"0.6"});
+    	$(".user-enter").css({"opacity":"0.6"});
+	    $(this).find('.user-course__link').css({"opacity":"1"});
+	}).mouseleave(function() {
+	    $(".top-nav__item").css({"opacity":"1"});
+	    $(".user-enter").css({"opacity":"1"});
+	});
+
+	$(".user-enter").mouseenter(function() {
+    	$(".top-nav__item").css({"opacity":"0.6"});
+    	$(".user-course__link").css({"opacity":"0.6"});
+	    $(this).css({"opacity":"1"});
+	}).mouseleave(function() {
+	    $(".top-nav__item").css({"opacity":"1"});
+	    $(".user-course__link").css({"opacity":"1"});
+	});
+
+	//SUBMENU-HOVER
+    $(".top-submenu__link").mouseenter(function() {
+    	$(".top-submenu__link").css({"color":"#80888c"});
+	    $(this).css({"color":"#000"});
+	}).mouseleave(function() {
+	    $(".top-submenu__link").css({"color":"#000"});
+	});
+
+
+
+
+
+
+
 	//MENU-MOBILE
 	$('body').on('click','.menu-btn', function(e){
 		e.preventDefault();

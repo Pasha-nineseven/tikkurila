@@ -22,9 +22,6 @@
 			.top-nav__link,
 			.user-links a{
 				color: #000;
-				&:hover{
-					color: #ed1c24;
-				}
 			}
 			.user-enter:before {
 			    background: url(../img/svg/profile.svg) no-repeat;
@@ -64,16 +61,13 @@
 		transition:all 0.3s ease;
 		
 	}
-	.user-links a{
-		&:hover{
-			color: #ed1c24;
-		}
-	}
 	.top-nav__link{
-		opacity: 0.7;
-		&:hover{
-			opacity: 1;
-		}
+		// &:not(:hover){
+		//   	opacity: 0.7;
+		// }
+		// &:hover{
+		// 	opacity: 1;
+		// }
 	}
 	.user-enter{
 		&:before{
@@ -92,12 +86,12 @@
 			background: url(../img/svg/m-arrow-w.svg) no-repeat;
 		}
 	}
-	.top-submenu__link{
-		color: #a3a6a7!important;
-		&:hover{
-			color: #011119!important;
-		}
-	}
+	// .top-submenu__link{
+	// 	color: #a3a6a7!important;
+	// 	&:hover{
+	// 		color: #011119!important;
+	// 	}
+	// }
 	.page-header{
 		&.active{
 			background: #fff;

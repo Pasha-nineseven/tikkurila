@@ -898,7 +898,7 @@ input[type="password"] {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .page-header.fixed {
-    background: rgba(255, 255, 255, 0.9);
+    background: #f1eddf;
     z-index: 10;
     padding-bottom: 5px; }
     .page-header.fixed:after {
@@ -950,7 +950,9 @@ input[type="password"] {
     display: inline-block;
     vertical-align: middle;
     color: #011119;
-    margin-right: -4px; }
+    margin-right: -4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .user-links a:last-child {
       padding-right: 0;
       border-right: 0;
@@ -958,7 +960,7 @@ input[type="password"] {
     .user-links a.user-enter {
       margin-left: 52px; }
     .user-links a:hover {
-      color: #ed1c24; }
+      color: #011119; }
   .user-links .user-enter {
     margin-left: 52px; }
     .user-links .user-enter a {
@@ -994,7 +996,9 @@ input[type="password"] {
 .user-enter {
   text-decoration: none;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
   .user-enter .user-links__icon {
     background: url(../img/svg/enter-h.svg) no-repeat;
     background-size: cover;
@@ -1020,7 +1024,7 @@ input[type="password"] {
 .user-enter--authorized .top-submenu__link {
   display: block;
   margin-bottom: 15px !important;
-  color: #a3a6a7;
+  color: #000;
   padding: 0 20px;
   border-left: 2px solid transparent;
   text-decoration: none;
@@ -1062,13 +1066,17 @@ input[type="password"] {
   transition: margin 0.3s ease; }
 
 .top-nav__item {
-  margin-right: 30px; }
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .top-nav__item:last-child {
     margin-right: 0; }
 
 .top-nav__link {
   color: #000;
   text-decoration: none; }
+  .top-nav__link:hover {
+    color: #000; }
 
 .top-nav__item--submenu {
   position: relative;
@@ -1112,8 +1120,8 @@ input[type="password"] {
       -ms-transform: translate(0, 12%);
           transform: translate(0, 12%);
   left: 0;
-  -webkit-box-shadow: 0px 2px 30px 0px rgba(190, 205, 209, 0.75);
-          box-shadow: 0px 2px 30px 0px rgba(190, 205, 209, 0.75);
+  -webkit-box-shadow: 0 8px 98px 10px rgba(90, 100, 102, 0.1);
+          box-shadow: 0 8px 98px 10px rgba(90, 100, 102, 0.1);
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin-left: -20px;
@@ -1146,14 +1154,15 @@ input[type="password"] {
 .top-submenu__link {
   display: block;
   margin-bottom: 15px !important;
-  color: #a3a6a7;
+  color: #000;
   padding: 0 20px;
   border-left: 2px solid transparent;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .top-submenu__link:hover {
-    color: #011119; }
+    color: #000; }
   .top-submenu__link.active {
-    pointer-events: none;
     border-left: 2px solid #ed1a23; }
 
 .top-submenu__item:last-child .top-submenu__link {
@@ -5603,9 +5612,6 @@ a.user-btn:hover {
     .layout--index .page-header.fixed .top-nav__link,
     .layout--index .page-header.fixed .user-links a {
       color: #000; }
-      .layout--index .page-header.fixed .top-nav__link:hover,
-      .layout--index .page-header.fixed .user-links a:hover {
-        color: #ed1c24; }
     .layout--index .page-header.fixed .user-enter:before {
       background: url(../img/svg/profile.svg) no-repeat;
       background-size: contain; }
@@ -5633,14 +5639,6 @@ a.user-btn:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.layout--index .user-links a:hover {
-  color: #ed1c24; }
-
-.layout--index .top-nav__link {
-  opacity: 0.7; }
-  .layout--index .top-nav__link:hover {
-    opacity: 1; }
-
 .layout--index .user-enter:before {
   background: url(../img/svg/profile-w.svg) no-repeat;
   background-size: contain; }
@@ -5651,11 +5649,6 @@ a.user-btn:hover {
 
 .layout--index .top-nav__item--submenu:after {
   background: url(../img/svg/m-arrow-w.svg) no-repeat; }
-
-.layout--index .top-submenu__link {
-  color: #a3a6a7 !important; }
-  .layout--index .top-submenu__link:hover {
-    color: #011119 !important; }
 
 .layout--index .page-header.active {
   background: #fff; }
