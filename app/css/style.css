@@ -816,7 +816,8 @@ h1 {
   font-weight: normal;
   font-size: 52px;
   text-transform: uppercase;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 h2 {
   margin: 0;
@@ -824,7 +825,8 @@ h2 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 42px;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 h3 {
   margin: 0;
@@ -832,7 +834,8 @@ h3 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 36px;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 h4 {
   margin: 0;
@@ -840,7 +843,8 @@ h4 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 28px;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 h5 {
   margin: 0;
@@ -848,7 +852,8 @@ h5 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 24px;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 h6 {
   margin: 0;
@@ -856,7 +861,8 @@ h6 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: 'din-round-pro-bold',sans-serif; }
+  font-family: 'din-round-pro-bold',sans-serif;
+  line-height: 1.2; }
 
 p {
   margin: 0;
