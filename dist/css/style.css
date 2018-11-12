@@ -2111,7 +2111,7 @@ a.user-btn {
     width: 100%;
     margin-bottom: 20px; }
   .workarea th, .popup__content th {
-    text-align: left;
+    text-align: center;
     font-family: 'din-round-pro-bold';
     background: #f2efe2;
     padding: 16px 30px; }
@@ -2127,7 +2127,8 @@ a.user-btn {
               border-bottom-right-radius: 4px; }
   .workarea td, .popup__content td {
     padding: 15px 30px;
-    border-bottom: 1px solid #f2efe2; }
+    border-bottom: 1px solid #f2efe2;
+    text-align: center; }
   .workarea tr:first-child td, .popup__content tr:first-child td {
     border-top: 4px solid #f2efe2; }
   .workarea tr:last-child td, .popup__content tr:last-child td {

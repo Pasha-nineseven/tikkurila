@@ -233,7 +233,7 @@
     	margin-bottom: 20px;
 	}
 	th{
-		text-align: left;
+		text-align: center;
     	font-family: 'din-round-pro-bold';
     	background: #f2efe2;
     	padding: 16px 30px;
@@ -249,6 +249,7 @@
 	td{
 		padding: 15px 30px;
 		border-bottom: 1px solid #f2efe2;
+		text-align: center;
 	}
 	tr{
 		&:first-child{
