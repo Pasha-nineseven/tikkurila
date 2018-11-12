@@ -68,6 +68,7 @@ $(document).ready(function() {
 	$('body').on('click','.menu-btn', function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
+		$('.page-header').toggleClass('active');
 		$('.menu-mobile').slideToggle();
 		$( 'body' ).toggleClass('fixed-menu');
 		if ($(this).hasClass('active')){

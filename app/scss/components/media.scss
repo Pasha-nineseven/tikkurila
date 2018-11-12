@@ -856,6 +856,17 @@
 	    padding-right: 0;
 	    margin-bottom: 30px;
 	}
+	.layout--index .page-header .user-course .user-links__icon {
+	    background: url(../img/svg/course-h.svg) no-repeat;
+	    background-size: cover;
+	}
+	.layout--index .page-header .user-enter .user-links__icon {
+	    background: url(../img/svg/enter-h.svg) no-repeat;
+	    background-size: cover;
+	}
+	.layout--index .top-nav__link, .layout--index .user-links a {
+	    color: #000;
+	}
 }
 
 @media screen and (max-width: 600px){

@@ -98,6 +98,11 @@
 			color: #011119!important;
 		}
 	}
+	.page-header{
+		&.active{
+			background: #fff;
+		}
+	}
 }
 
 .index-top{

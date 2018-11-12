@@ -1905,6 +1905,8 @@ a.user-btn {
   display: block;
   padding: 3px 0;
   text-decoration: none; }
+  .menu-mobile__link.active {
+    font-weight: bold; }
 
 .menu-mobile-submenu {
   padding-left: 20px;
@@ -3341,7 +3343,24 @@ a.breadcrumbs__item {
   .cabinet-phones__icon img {
     max-width: 100%;
     height: auto;
-    max-height: 100%; }
+    max-height: 100%;
+    display: block; }
+
+.hint-block {
+  color: #011119;
+  font-size: 14px;
+  margin-left: 35px;
+  padding-left: 30px;
+  position: relative; }
+  .hint-block:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/content/info.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0; }
 
 .cabinet-address {
   margin-right: -55px;
@@ -5638,6 +5657,9 @@ a.user-btn:hover {
   .layout--index .top-submenu__link:hover {
     color: #011119 !important; }
 
+.layout--index .page-header.active {
+  background: #fff; }
+
 .index-top {
   padding: 260px 0 64px;
   position: relative;
@@ -6963,7 +6985,15 @@ a.user-btn:hover {
   .final .examen-materials__item {
     width: 100%;
     padding-right: 0;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .layout--index .page-header .user-course .user-links__icon {
+    background: url(../img/svg/course-h.svg) no-repeat;
+    background-size: cover; }
+  .layout--index .page-header .user-enter .user-links__icon {
+    background: url(../img/svg/enter-h.svg) no-repeat;
+    background-size: cover; }
+  .layout--index .top-nav__link, .layout--index .user-links a {
+    color: #000; } }
 
 @media screen and (max-width: 600px) {
   .popular .index-courses__item {
