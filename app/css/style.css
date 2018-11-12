@@ -3977,7 +3977,7 @@ a.breadcrumbs__item {
   display: inline-block;
   vertical-align: middle; }
   .course-chars__icon svg {
-    fill: #9ea2a3;
+    fill: #000;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
