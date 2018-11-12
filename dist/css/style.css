@@ -4617,7 +4617,8 @@ a.breadcrumbs__item {
   max-width: 768px;
   margin: 0 auto;
   padding: 45px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .popup__content {
   max-width: 620px;
