@@ -3905,7 +3905,8 @@ a.breadcrumbs__item {
   padding-top: 2px; }
 
 .index-top__course {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .course-name {
   background: #fff;
@@ -5637,14 +5638,24 @@ a.user-btn:hover {
     color: #011119 !important; }
 
 .index-top {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding: 260px 0 64px;
   position: relative;
   z-index: 1; }
   .index-top .container-fluid {
     position: static; }
+
+.index-top__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.layout--course .index-top__bg {
+  opacity: 0.5; }
 
 .index-top__video {
   position: absolute;
