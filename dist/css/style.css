@@ -1730,9 +1730,10 @@ a.user-btn {
 .user-watch__link,
 .exam-watch__link {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
   background: url(../img/svg/bottom.svg) no-repeat;
+  background-size: cover;
   -webkit-transition: ll 0.3s ease;
   transition: ll 0.3s ease;
   position: absolute;
@@ -1747,7 +1748,8 @@ a.user-btn {
             transform: rotate(180deg); }
   .user-watch__link:hover,
   .exam-watch__link:hover {
-    background: url(../img/svg/bottom-h.svg) no-repeat; }
+    background: url(../img/svg/bottom-h.svg) no-repeat;
+    background-size: cover; }
 
 .user-watch {
   position: relative;
@@ -3727,9 +3729,9 @@ a.breadcrumbs__item {
   .examen-materials .user-watch__link,
   .examen-materials .exam-watch__link {
     left: auto;
-    right: 0;
+    right: -5px;
     top: auto;
-    bottom: 6px; }
+    bottom: 1px; }
   .examen-materials .user-watch__list {
     padding-top: 10px;
     font-size: 18px; }

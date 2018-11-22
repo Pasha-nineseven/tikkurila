@@ -1009,9 +1009,10 @@ a.user-btn{
 .user-watch__link,
 .exam-watch__link{
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 24px;
+	height: 24px;
 	background: url(../img/svg/bottom.svg) no-repeat;
+	background-size: cover;
 	transition: ll 0.3s ease;
 	position: absolute;
 	left: 0;
@@ -1022,6 +1023,7 @@ a.user-btn{
 	}
 	&:hover{
 		background: url(../img/svg/bottom-h.svg) no-repeat;
+		background-size: cover;
 	}
 }
 .user-watch{
