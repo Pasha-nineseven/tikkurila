@@ -5657,6 +5657,9 @@ a.user-btn:hover {
 .layout--index .page-header.active {
   background: #fff; }
 
+.layout--index .layout--index .user-links .top-submenu__link {
+  color: #000; }
+
 .index-top {
   padding: 260px 0 64px;
   position: relative;
