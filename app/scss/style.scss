@@ -4046,6 +4046,18 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
 }
 
 
+.cabinet-links--mobile{
+	margin-bottom: 30px;
+	display: none;
+	.jq-selectbox__select {
+	    padding-left: 0;
+	    border-bottom: 2px solid #c6d0cd !important;
+	    font-size: 18px;
+	    height: 44px;
+	}
+}
+
+
 $step: 5;
 $loops: round(100 / $step);
 $increment: 360 / $loops;

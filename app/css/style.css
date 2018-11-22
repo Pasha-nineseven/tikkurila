@@ -5465,6 +5465,15 @@ a.user-btn:hover {
     display: block;
     max-width: 100%; }
 
+.cabinet-links--mobile {
+  margin-bottom: 30px;
+  display: none; }
+  .cabinet-links--mobile .jq-selectbox__select {
+    padding-left: 0;
+    border-bottom: 2px solid #c6d0cd !important;
+    font-size: 18px;
+    height: 44px; }
+
 .progress--bar.progress--0:after {
   width: 0%; }
 
@@ -7212,4 +7221,8 @@ a.user-btn:hover {
   .cabinet-item__title {
     margin-bottom: 10px; }
   .data-change {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .cabinet-links--mobile {
+    display: block; }
+  .cabinet-links {
+    display: none; } }
