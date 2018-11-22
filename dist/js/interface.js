@@ -621,7 +621,7 @@ $(document).ready(function() {
 		});
 	};
 
-   	courseSliderStart();
+   	//courseSliderStart();
 
    	
 });
@@ -645,9 +645,9 @@ $(function(){
 });
 
 
-$(window).resize(function () {
-	courseSliderStart();
-});
+// $(window).resize(function () {
+// 	courseSliderStart();
+// });
 
 // $(window).load(function(){
 
@@ -655,38 +655,38 @@ $(window).resize(function () {
 
 // functions
 
-function courseSliderStart() {
-	if ($('.course').length>0) {
-		var $course = $('.course');
-		if($(window).width() < 750) {
-			$course.not('.slick-initialized').slick({
-			  	speed: 250,
-				swipe: true,
-				swipeToSlide: true,
-				touchThreshold: 10,
-				arrows:true,
-				useTransform:true,
-				accessibility: false,
-				infinite: false,
-				slidesToShow: 2,
-	  			slidesToScroll: 1,
-				responsive: [
-				    {
-				      breakpoint: 550,
-				      settings: {
-				        slidesToShow:1,
-	  					slidesToScroll: 1
-				      }
-				    },
-			  	]
-			});
-		} else{
-			if($course.hasClass('slick-initialized')) {
-				$course.slick("unslick");
-			}
-		}
-	}
-}
+// function courseSliderStart() {
+// 	if ($('.course').length>0) {
+// 		var $course = $('.course');
+// 		if($(window).width() < 750) {
+// 			$course.not('.slick-initialized').slick({
+// 			  	speed: 250,
+// 				swipe: true,
+// 				swipeToSlide: true,
+// 				touchThreshold: 10,
+// 				arrows:true,
+// 				useTransform:true,
+// 				accessibility: false,
+// 				infinite: false,
+// 				slidesToShow: 2,
+// 	  			slidesToScroll: 1,
+// 				responsive: [
+// 				    {
+// 				      breakpoint: 550,
+// 				      settings: {
+// 				        slidesToShow:1,
+// 	  					slidesToScroll: 1
+// 				      }
+// 				    },
+// 			  	]
+// 			});
+// 		} else{
+// 			if($course.hasClass('slick-initialized')) {
+// 				$course.slick("unslick");
+// 			}
+// 		}
+// 	}
+// }
 
 // links pages
 if (IS_LOCAL_HTML) {
