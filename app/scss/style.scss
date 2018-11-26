@@ -121,6 +121,9 @@
 	}
 	.page-header{
 		background: transparent;
+		&.active{
+			background: #fff;
+		}
 	}
 }
 

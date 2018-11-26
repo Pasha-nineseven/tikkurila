@@ -1852,7 +1852,8 @@ a.user-btn {
 .menu-btn {
   display: none;
   float: right;
-  margin-top: 37px; }
+  margin-top: 37px;
+  margin-left: 20px; }
   .menu-btn.active .burger-icon {
     background-color: transparent; }
     .menu-btn.active .burger-icon:before {
@@ -2038,6 +2039,8 @@ a.user-btn {
     margin-bottom: 5px; }
   .layout--404 .page-header {
     background: transparent; }
+    .layout--404 .page-header.active {
+      background: #fff; }
 
 .wrapper {
   display: table-row;
@@ -6801,7 +6804,6 @@ a.user-btn:hover {
   .menu-btn {
     display: inline-block;
     vertical-align: middle; }
-  .user-links,
   .top-nav {
     display: none; }
   .final .examen-materials {
