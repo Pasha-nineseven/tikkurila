@@ -7031,7 +7031,32 @@ a.user-btn:hover {
     text-align: center;
     padding-top: 20px; }
   .page-header.fixed .top-logo {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .cabinet-phones .intl-tel-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
+  .cabinet-phones .cabinet-phones__item--code .btn {
+    margin-left: 0; }
+  .cabinet-phones .hint-block {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px; }
+  .cabinet-phones .intl-tel-input + .btn {
+    margin-top: 0; }
+  .input-wrap--change input[type="text"],
+  .input-wrap--change input[type="email"],
+  .input-wrap--change input[type="search"],
+  .input-wrap--change input[type="password"] {
+    max-width: 100%;
+    margin-right: 0; }
+  .input-wrap--change {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 0; }
+  .cabinet-item .btn {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 600px) {
   .popular .index-courses__item {
