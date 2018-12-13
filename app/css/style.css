@@ -3830,6 +3830,8 @@ a.breadcrumbs__item {
   border-bottom: 0; }
   .layout--course .page-header:after {
     display: none; }
+  .layout--course .page-header.active {
+    background: #fff; }
   .layout--course .page-header.fixed {
     background: #f1eddf; }
     .layout--course .page-header.fixed .top-nav__link,
@@ -5610,6 +5612,18 @@ a.user-btn:hover {
     max-height: 260px;
     overflow-y: auto; }
 
+.index-top__bg--mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; }
+
 .layout--index .page-title,
 .layout--index .breadcrumbs {
   display: none; }
@@ -7056,7 +7070,13 @@ a.user-btn:hover {
             flex-wrap: wrap;
     margin-bottom: 0; }
   .cabinet-item .btn {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .index-top__bg--mobile {
+    display: block; }
+  .layout--course .index-top__bg {
+    display: none; }
+  .video-list-link {
+    display: none; } }
 
 @media screen and (max-width: 600px) {
   .popular .index-courses__item {

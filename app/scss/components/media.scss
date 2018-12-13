@@ -919,6 +919,15 @@
 	.cabinet-item .btn {
 		margin-top: 30px;
 	}
+	.index-top__bg--mobile{
+		display: block;
+	}
+	.layout--course .index-top__bg{
+		display: none;
+	}
+	.video-list-link{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 600px){
