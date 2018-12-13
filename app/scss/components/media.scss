@@ -38,10 +38,6 @@
 }
 
 @media screen and (max-width: 1450px){
-	.middle-slider__item {
-	    // padding-left: 60px;
-	    // padding-right: 60px;
-	}
 	.middle-slider-wrap .slick-prev {
 	    left: 20px;
 	}
@@ -227,9 +223,7 @@
 	.index-courses__item {
 	    width: 50%;
 	}
-	.middle-slider__item {
-	   
-	}
+
 	.middle-slider__title, .middle-slider__info {
 	    max-width: 100%;
 	}
@@ -614,9 +608,6 @@
 	.top-nav{
 		display: none;
 	}
-	.user-links{
-		
-	}
 	.final .examen-materials {
 	    flex-wrap: wrap;
 	}
@@ -718,10 +709,6 @@
 	.middle-slider__title {
 	    font-size: 24px;
 	    line-height: 1.2;
-	}
-	.middle-slider__item {
-	    // padding-top: 50px;
-	    // padding-bottom: 50px;
 	}
 	.index-about__count {
 	    font-size: 30px;
@@ -920,16 +907,12 @@
 	.middle-slider-wrap .slick-arrow {
 	    display: none!important;
 	}
-	.middle-slider__item {
-	    // padding: 100px 20px;
-	}
 	.index-courses__item,
 	.course .index-courses__item{
 	    width: 100%;
 	    margin-bottom: 20px;
 	}
 	.index-courses__bg {
-	    // box-shadow: 0px 2px 30px 0px rgba(190, 205, 209, 0.75);
 	    box-shadow: none;
 	}
 	.index-courses__btn{
@@ -1162,5 +1145,11 @@
 	}
 	.cabinet-links{
 		display: none;
+	}
+	.vocabulary-list{
+		display: none;
+	}
+	.vocabulary-list--mobile{
+		display: block;
 	}
 }
