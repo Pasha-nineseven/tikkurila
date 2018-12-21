@@ -587,6 +587,29 @@ $(document).ready(function() {
    	});
 
 
+	$( 'body' ).on( 'click', '.js-result-item__link', function( event ) {
+		event.preventDefault();
+		//$('.result-item').removeClass('active');
+		$(this).parents('.result-item').toggleClass('active');
+		$(this).parents('.result-item').find('.result-exam').slideToggle(10);
+   	});
+
+   	$( 'body' ).on( 'click', '.js-result-exam__link', function( event ) {
+		event.preventDefault();
+		$(this).parents('.result-exam').find('.result-exam__list').slideDown();
+		$('.result-exam__link').removeClass('active');
+		$(this).addClass("active");
+	    var toggle = $(this).data('toggle');
+	    $(this).parents('.result-exam').find(".result-exam__item").addClass('dnone');
+	    $("#view-"+toggle).removeClass('dnone');
+   	});
+
+
+   	$( 'body' ).on( 'click', '.js-result-exam__work', function( event ) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$(this).parents('.result-exam-char').find('.result-comments').slideToggle();
+   	});
 
     //CABINET-DATA-CHANGE
     if (IS_LOCAL_HTML) {
