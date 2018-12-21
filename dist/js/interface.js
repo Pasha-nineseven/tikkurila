@@ -28,6 +28,11 @@ $(document).ready(function() {
             e.preventDefault();
 	        $('.user-course__list').fadeOut(100);
         },
+        scrollToAnchor: function (e, target) {
+            e && e.preventDefault();
+            var aid = e? $(e.currentTarget).attr("href") : target;
+            $('html,body').animate({scrollTop: $(aid).offset().top - 85},'slow');
+        },
         _init: function () {
             flexibility(document.documentElement);
             $.responsiveTables();
@@ -41,6 +46,10 @@ $(document).ready(function() {
             this._handleClicksOnHashLinks();
             this._handleToggleRightPanel();
             this._handleToggleCoursePanel();
+            this._handleScrollToAnchor();
+        },
+        _handleScrollToAnchor: function () {
+            $('body').on( 'click', '.js-scroll-link', this.scrollToAnchor);
         },
         _handleClicksOnHashLinks: function () {
             var selectors = [
@@ -310,14 +319,6 @@ $(document).ready(function() {
 	    $(this).parents('.page-filter-second').find('.page-filter-submenu-second').slideToggle(150);
 	});
 
-
-
-	//ANCHOR SCROLL
-	$( 'body' ).on( 'click', '.js-scroll-link', function(e) {
-	    e.preventDefault();
-	    var aid = $(this).attr("href");
-	    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-	});
 
 	$( 'body' ).on( 'click', '.vocabulary-panel__link--cursor', function(e) {
 	    e.preventDefault();
@@ -617,13 +618,13 @@ $(document).ready(function() {
 		$('.tooltip').tooltipster({
 			animation: 'fade',
    			delay: 100,
-   			'maxWidth': 500, 
+   			'maxWidth': 500,
 		});
 	};
 
    	//courseSliderStart();
 
-   	
+
 });
 
 
