@@ -28,6 +28,9 @@ $(document).ready(function() {
             e.preventDefault();
 	        $('.user-course__list').fadeOut(100);
         },
+        redirectTo: function (url) {
+            window.location.href = url;
+        },
         scrollToAnchor: function (e, target) {
             e && e.preventDefault();
             var aid = e? $(e.currentTarget).attr("href") : target;
