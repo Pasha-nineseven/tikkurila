@@ -6863,7 +6863,15 @@ a.user-btn:hover {
   .breadcrumbs .container-fluid {
     max-width: 100%; }
   .layout--cabinet .page-content > .container-fluid {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .layout--index .index-top {
+    padding: 180px 0 30px; }
+  .index-about {
+    padding: 20px 0 20px; }
+  .index-about h3 {
+    margin-bottom: 10px; }
+  .index-about__msg {
+    margin: 0 auto 30px; } }
 
 @media screen and (max-width: 1200px) {
   .t-columns.t-columns--max {
