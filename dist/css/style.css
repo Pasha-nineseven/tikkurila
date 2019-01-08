@@ -1683,9 +1683,7 @@ a.user-btn {
         border: 1px solid #385443;
         background: url(../img/svg/rect.svg) center no-repeat;
         left: -39px;
-        margin-top: -15px;
-        -webkit-transition: background 0.3s ease;
-        transition: background 0.3s ease; }
+        margin-top: -15px; }
 
 .user-lecture__links a.user-btn:hover {
   background: transparent; }
@@ -7854,4 +7852,31 @@ a.user-btn:hover {
   .forgot {
     position: static;
     margin-top: 20px;
-    display: block; } }
+    display: block; }
+  .index-top__bg {
+    opacity: 0.6; }
+  .user-links {
+    position: static; }
+  .user-course__list {
+    width: 98%;
+    right: 1%;
+    left: 1%; }
+  .user-course__list:before {
+    right: 161px; }
+  .user-lecture__roll ol {
+    padding: 20px 15px; }
+  .user-lecture__links {
+    padding-right: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .user-lecture__roll .user-btn {
+    display: block;
+    width: 100%;
+    margin: 20px 0 10px 40px !important;
+    text-align: left; }
+  .user-enter--authorized .top-submenu,
+  .top-submenu {
+    width: 98%;
+    left: auto;
+    right: 1%; } }
