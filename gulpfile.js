@@ -34,6 +34,7 @@ gulp.task('scripts', function(){
         'app/libs/rtables/jquery.responsive-tables.js',
         'app/libs/telinput/intlTelInput.js',
         'app/libs/tooltip/tooltipster.bundle.min.js',
+        'app/libs/sticky/jquery.sticky.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

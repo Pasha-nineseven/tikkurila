@@ -650,7 +650,9 @@ $(document).ready(function() {
 
    	//courseSliderStart();
 
-
+   	if ($('.vocabulary-list--mobile').length>0) {
+   		$(".vocabulary-list--mobile").sticky({topSpacing:94});
+   	}
 });
 
 
